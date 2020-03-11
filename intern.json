@@ -1,0 +1,18 @@
+{
+  "capabilities": {
+    "fixSessionCapabilities": "no-detect"
+  },
+  "environments": [
+    {
+      "browserName": "chrome",
+      "chromeOptions": { "args": [ "headless", "window-size=1024,768" ] }
+    }
+  ],
+  "tunnelOptions": {
+    "drivers": [
+      { "name": "chrome" }
+    ]
+  },
+  "filterErrorStack": true,
+  "suites": "~tmp/tests.js"
+}
